@@ -1,0 +1,463 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+section{
+ padding-top: 40px;
+}
+
+.scroll-btn i{
+    position: fixed;    
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 12px;
+    background-color:rgb(86, 114, 73);
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.scroll-btn i:hover{
+    font-size: 20px;
+
+}
+
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .text {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
+
+.card-title {
+  color: rgb(86, 114, 73);
+}
+
+.card a {
+  text-decoration: none;
+  color: rgb(86, 114, 73);
+  transition: all 0.3s ease;
+}
+
+.card a:hover {
+  cursor: pointer;
+  background-color: rgb(86, 114, 73);
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+nav.sticky {
+  padding: 13px 0;
+  background-color: rgb(90, 124, 75);
+  color: white;
+}
+
+nav.sticky .navbar .logo {
+  color: white;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.4s ease;
+  z-index: 998;
+}
+
+nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+nav .navbar .logo a {
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(201, 226, 189);
+}
+
+nav .navbar .menu {
+  display: flex;
+}
+
+nav li {
+  margin: 0 8px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+nav a:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.514);
+}
+
+.navbar .menu li {
+  font-size: 18px;
+}
+
+.navbar .media-icons a {
+  font-size: 23px;
+  margin: 0 6px;
+  color: rgb(201, 226, 189);
+  transition: all 0.4s ease;
+}
+
+.navbar .media-icons a:hover {
+  font-size: 23px;
+  color: white;
+}
+
+nav .menu-btn,
+.navbar .cancel-btn {
+  position: absolute;
+  font-size: 30px;
+  color: rgb(201, 226, 189);
+  right: 30px;
+  top: 20px;
+  display: none;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color:rgb(208, 223, 201);
+    width: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color:rgb(86, 114, 73);
+    border-radius: 12px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color:rgb(57, 75, 48);
+  }
+
+
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url("lukas-blazek-EWDvHNNfUmQ-unsplash.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(67, 67, 67, 0.5); /* Tint color */
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+.home .home-content {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+}
+
+.home .text .text-one {
+  font-size: 25px;
+}
+.home .text .text-two {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .text .text-three {
+  font-size: 40px;
+}
+
+.button {
+  margin: 14px 0;
+}
+
+.button button {
+  outline: none;
+  background-color: rgb(165, 187, 155);
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 8px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+.button button:hover {
+  background-color: white;
+  border-color: rgb(165, 187, 155);
+  color: rgb(165, 187, 155);
+  cursor: pointer;
+}
+
+.about .about-details .right img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about .about-details .right {
+  width: 45%;
+}
+
+.about .about-details .left {
+  width: 55%;
+  margin-left: 20px;
+}
+.contact .topic {
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(165, 187, 155);
+  margin-bottom: 10px;
+}
+
+.about .about-details .left .topic {
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(165, 187, 155);
+  margin-bottom: 10px;
+}
+
+.about .about-details p {
+  color: rgb(95, 113, 87);
+  text-align: justify;
+}
+
+.about .content {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.title span {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.projects {
+  margin-top: 25px;
+}
+
+.contact .title span::before,
+.contact .title span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background: rgb(165, 187, 155);
+  height: 3px;
+  width: 100%;
+}
+
+.contact .title span::after {
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 7px;
+}
+
+.contact{
+   background: rgb(246, 248, 245);
+    padding: 20px 0;
+}
+
+footer {
+  text-align: center;
+  background: rgb(165, 187, 155);
+  padding: 15px 0;
+}
+
+footer .text{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.projects .title span::before,
+.projects .title span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background: rgb(165, 187, 155);
+  height: 3px;
+  width: 100%;
+}
+
+.projects .title span::after {
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 7px;
+}
+
+.skills .title span::before,
+.skills .title span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background: rgb(165, 187, 155);
+  height: 3px;
+  width: 100%;
+}
+
+.skills{
+    background: rgb(246, 248, 245);
+    padding-bottom: 40px;
+}
+
+
+.skills .title span::after {
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 7px;
+}
+
+.about .title span::before,
+.about .title span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background: rgb(165, 187, 155);
+  height: 3px;
+  width: 100%;
+}
+
+.about .title span::after {
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 7px;
+}
+
+.about .about-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topic-skills {
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 750px) {
+  nav .navbar .menu {
+    position: absolute;
+    left: -100%;
+    top: -13px;
+    height: 100vh;
+    max-width: 400px;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    padding-top: 60px;
+    transition: all 0.5s ease;
+  }
+
+  nav .navbar.active .menu {
+    left: -40px;
+  }
+
+  .navbar .menu li a {
+    display: block;
+    font-size: 23px;
+    color: white;
+    margin: 10px 0;
+  }
+  .navbar .media-icons a {
+    display: none;
+  }
+  nav .menu-btn,
+  .navbar .cancel-btn {
+    display: block;
+  }
+  .home .text .text-one {
+    font-size: 25px;
+  }
+  .home .text .text-two {
+    font-size: 65px;
+  }
+  .home .text .text-three {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 510px) {
+  .home .text .text-two {
+    font-size: 55px;
+  }
+  .home .text .text-three {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .about .content {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1190px) {
+  .about .about-details .left {
+    width: 87%;
+    margin-left: 30px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about .about-details {
+    flex-direction: column;
+  }
+
+  .about .about-details .right img {
+    display: none;
+  }
+}
